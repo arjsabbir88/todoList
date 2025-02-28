@@ -25,10 +25,27 @@
         font-weight: 400;
         font-style: normal;
       }
-      body {
+    body {
         height: 100vh;
         width: 100vw;
-      }
+    }
+    #addedTask h2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #addedTask h2 i{
+        height: 40px;
+        width: 40px;
+        background-color: rgb(225, 236, 236);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #addedTask h2 i:hover{
+        background-color: #020617;
+    }
     </style>
   </head>
   <body class="bg-slate-950">
@@ -56,15 +73,15 @@
             type="text"
             id="input-field"
             placeholder="Type here"
-            class="input input-bordered input-success w-full max-w-xs"
+            class="input border-slate-900 outline-slate-900 w-full max-w-xs"
           />
-          <button id="toDoBtn" class="btn bg-teal-600 text-white">
+          <button id="toDoBtn" class="btn bg-slate-900 text-white">
             Add List
           </button>
         </div>
         <div id="addedTask">
             <!-- <h1 class="border-b-2 border-slate-800 p-2 text-xl">hello</h1> -->
-            <a href=""><i class="fa-solid fa-xmark"></i></a>
+            <!-- <a href=""><i class="fa-solid fa-xmark"></i></a> -->
         </div>
       </div>
     </section>
